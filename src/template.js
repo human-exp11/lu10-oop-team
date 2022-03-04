@@ -1,7 +1,7 @@
-// template helper code to create cards
+// template helper code to create cards & html page
 const createTeam = team => {
 
-    // create Manager html code
+    // create Manager html 
     const createManager = manager => {
         return `
             <div class="card employee-card">
@@ -20,7 +20,7 @@ const createTeam = team => {
         `;
     };
 
-    // create the html for engineers
+    // create Engineer html
     const createEngineer = engineer => {
         return `
             <div class="card employee-card">
@@ -39,7 +39,7 @@ const createTeam = team => {
         `;
     };
 
-    // create the html for interns
+    // create Intern html
     const createIntern = intern => {
         return `
             <div class="card employee-card">
