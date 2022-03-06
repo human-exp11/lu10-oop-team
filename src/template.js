@@ -1,13 +1,13 @@
 // template helper code to create cards & html page
-const createTeam = team => {
+const buildTeam = team => {
 
-    // create Manager html 
+    //Manager html  card
     const createManager = manager => {
         return `
             <div class="card employee-card">
-                <div class="card-header bg-primary text-black">
+                <div class="card-header">
                     <h2 class="card-title">${manager.getName()}</h2>
-                    <h3 class="card-title"><i class="fa-duotone fa-mug-saucer"></i></i>${manager.getRole()}</h3>
+                    <h3 class="card-title"><i class="fa-solid fa-mug-hot"></i></i>${manager.getRole()}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -20,13 +20,13 @@ const createTeam = team => {
         `;
     };
 
-    // create Engineer html
+    // Engineer html card
     const createEngineer = engineer => {
         return `
             <div class="card employee-card">
-                <div class="card-header bg-primary text-black">
+                <div class="card-header">
                     <h2 class="card-title">${engineer.getName()}</h2>
-                    <h3 class="card-title"><i class="fa-duotone fa-starfighter-twin-ion-engine-advanced"></i>${engineer.getRole()}</h3>
+                    <h3 class="card-title"><i class="fa-solid fa-desktop"></i>${engineer.getRole()}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -39,13 +39,13 @@ const createTeam = team => {
         `;
     };
 
-    // create Intern html
+    // Intern html card
     const createIntern = intern => {
         return `
             <div class="card employee-card">
-                <div class="card-header bg-primary text-black">
+                <div class="card-header">
                     <h2 class="card-title">${intern.getName()}</h2>
-                    <h3 class="card-title"><i class="fa-duotone fa-book-open"></i>${intern.getRole()}</h3>
+                    <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i></i>${intern.getRole()}</h3>
                 </div>
                 <div class="card-body">
                     <ul class="list-group">
@@ -79,7 +79,7 @@ const createTeam = team => {
 
 }
 
-// export function to generate complete page
+// export function to generate final html page
 module.exports = team => {
 
     return `
@@ -92,7 +92,7 @@ module.exports = team => {
             <title>My Team</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-            <script src="https://kit.fontawesome.com/c502137733.js"></script>
+                <script src="https://kit.fontawesome.com/307a2e6a82.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
             <link rel="stylesheet" href="./dist/style.css">
         </head>
@@ -107,7 +107,7 @@ module.exports = team => {
             <div class="container">
                 <div class="row">
                     <div class="row team-area col-12 d-flex justify-content-center">
-                        ${createTeam(team)}
+                        ${buildTeam(team)}
                     </div>
                 </div>
             </div>
