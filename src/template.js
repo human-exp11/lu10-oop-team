@@ -5,7 +5,7 @@ const buildTeam = team => {
     const createManager = manager => {
         return `
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header bg-success">
                     <h2 class="card-title">${manager.getName()}</h2>
                     <h3 class="card-title"><i class="fa-solid fa-mug-hot"></i></i>${manager.getRole()}</h3>
                 </div>
@@ -24,7 +24,7 @@ const buildTeam = team => {
     const createEngineer = engineer => {
         return `
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header bg-info">
                     <h2 class="card-title">${engineer.getName()}</h2>
                     <h3 class="card-title"><i class="fa-solid fa-desktop"></i>${engineer.getRole()}</h3>
                 </div>
@@ -43,7 +43,7 @@ const buildTeam = team => {
     const createIntern = intern => {
         return `
             <div class="card employee-card">
-                <div class="card-header">
+                <div class="card-header bg-secondary">
                     <h2 class="card-title">${intern.getName()}</h2>
                     <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i></i>${intern.getRole()}</h3>
                 </div>
@@ -94,12 +94,12 @@ module.exports = team => {
                 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
                 <script src="https://kit.fontawesome.com/307a2e6a82.js" crossorigin="anonymous"></script>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
-            <link rel="stylesheet" href="./dist/style.css">
+            <link rel="stylesheet" href="./dist/style.css"> 
         </head>
         <body>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 jumbotron mb-3 team-heading bg-danger">
+                    <div class="col-12 jumbotron mb-3 team-heading bg-dark">
                         <h1 class="text-center text-white">My Team</h1>
                     </div>
                 </div>
