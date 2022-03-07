@@ -28,7 +28,7 @@ SO THAT I have quick access to their emails and GitHub profiles
 * WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input √
 * WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
+THEN my default email program opens and populates the TO field of the email with the address √
 * WHEN I click on the GitHub username
 THEN that GitHub profile opens in a new tab √
 * WHEN I start the application
@@ -46,7 +46,7 @@ THEN I exit the application, and the HTML is generated √
 ---
 
 ## Application Video
-*[Video Link]()
+*[Video Link](https://drive.google.com/file/d/1DOvo6PHz8v7Sdi2DWjaQ_1WXqLi313JH/view)
 
 ---
 
